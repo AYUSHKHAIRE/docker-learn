@@ -1,0 +1,21 @@
+docker run -it ubuntu
+it looks for if i have ubuntu image already .
+if no it downloads it .
+
+images - it is like an operating system .
+containers - an isolated box . runs images .
+i can run a single image in multiple containers .
+i can have costum images with my own tools .
+
+list all running containers
+docker container ls
+docker container ls -a
+docker start [ container id ]
+docker rm [ container id ]
+docker stop [ container id ]
+docker exec [ container id ] pwd
+docker exec -it adb2e47306b2 ls 
+docker exec -it <container_id> /bin/bash
+docker run -it -p 8000:8000 django
+docker run -it -p 8000:8000 django -e key=value -e key=value
+docker run --network host my-django-app
